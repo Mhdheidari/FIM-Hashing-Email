@@ -1,11 +1,10 @@
-<h1>Integrity_Powershell_FIM_Email </h1>
+<h1>Integrity_PowerShell_FIM_Email </h1>
 
-<b>Automated Cybersecurity Analyzing:</b>
-<br />
-This script is designed to enhance cybersecurity measures through automated monitoring and alerting, providing real-time notifications of any file changes within the specified folder. This script provides a file integrity monitoring(FIM) mechanism with email alerts for system administrators or users concerned about file changes within a specific folder. 
-<br /><br />
-<b>Script Functionality:</b><br /> script monitors a specified folder for changes in files.
-It can:
+#### Automated Cybersecurity Analyzing:
+These scripts `SecurePassword-Email.ps1` `FIM-Hashing-Email.ps1` are designed to enhance cybersecurity measures through automated monitoring and alerting, providing real-time notifications of any file changes within the specified folder. These scripts provides a file integrity monitoring (FIM) mechanism with email alerts for system administrators or users concerned about file changes within a specific folder. 
+
+#### Script Functionality:
+The script monitors a specified folder for changes in files. It can:
 - Create a baseline of file hashes in a "baseline.txt" file.
 - Continuously monitor files in the specified folder against this baseline.
 - Send email notifications when:
@@ -35,7 +34,7 @@ It can:
   - Body providing details such as the file path and event description.
 
 ### Secure Password:
-- The script uses a secure password stored in a file for sending emails.
+- The script`SecurePassword-Email.ps1` uses a secure password stored in a file for sending emails.
 - The secure password is retrieved from the file `password.txt`.
 - This ensures the password is not directly visible in the script for security.
 
