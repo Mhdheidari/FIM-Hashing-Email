@@ -1,27 +1,51 @@
-﻿#---------------------- Integrity_Powershell_FIM_Email ----------------------#
-# Hashing Algorithm - File Integrity Monitor(FIM)                            #
-# Collecting new Baseline and Begin monitoring files with saved Baseline     #
-# Notify if a new file has been created, changed, or compromised!            #
-# Sending email with secure password for credential to notify the user       #
-#----------------------------------------------------------------------------#
+# File Integrity Monitoring with Email Alerts
+# Description:
+# This PowerShell script provides a file integrity monitoring mechanism with email alerts for system administrators or users concerned about file changes within a specific folder. It allows users to:
+#   - Collect a new baseline of file hashes (Option A).
+#   - Begin monitoring files against the saved baseline (Option B).
+# When monitoring (Option B) is chosen:
+#   - The script continuously checks files in the specified folder against the baseline hashes.
+#   - Sends email notifications for:
+#       - New files created.
+#       - Changes in existing files.
+#       - Deleted files.
+#***************************************************************************************************************
+# Author: Mohammad Heidari
+# Date: September 2023
+# Version: 1.0
+# Last Updated: April 15, 2024
+#
+# Dependencies:
+#   - PowerShell 5.1 or higher
+#   - Access to an SMTP server for sending emails
+#---------------------------------------------------------------------------------------------------------------
 
+# Function to calculate SHA512 hash of a file
 Function Calculate-File-Hash($filepath) {
     $filehash = Get-FileHash -Path $filepath -Algorithm SHA512
     return $filehash
 }
 
+# Function to erase baseline.txt if it already exists
 Function Erase-Baseline-If-Already-Exists() {
     $baselineExists = Test-Path -Path .\baseline.txt
 
     if ($baselineExists) {
-        # Delete it
+        # Delete baseline.txt
         Remove-Item -Path .\baseline.txt
     }
 }
 
+# Function to send email notification
 Function Send-NotificationEmail($subject, $body) {
     $sendmbx = "heidarimhd@outlook.com"
     $receivembx = "heidarimhd@outlook.com"
+    $passwordFile = "C:\Users\Mohammad\Documents\PowerShell-Integrity Project\password.txt"
+
+    # Read the secure password from file
+    $securePassword = Get-Content -Path $passwordFile | ConvertTo-SecureString
+
+    $credential = New-Object System.Management.Automation.PSCredential($sendmbx, $securePassword)
 
     $props = @{
         SMTPServer = "smtp.office365.com"
@@ -31,11 +55,14 @@ Function Send-NotificationEmail($subject, $body) {
         Body = $body
         UseSSL = $true
         Port = 587
-        Credential = New-Object System.Management.Automation.PSCredential($sendmbx,$pwd_2)
+        Credential = $credential
     }
 
     Send-MailMessage @props
 }
+
+# Set TLS 1.2 for secure communication
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 Write-Host ""
 Write-Host "What would you like to do?"
@@ -61,23 +88,19 @@ if ($response -eq "A".ToUpper()) {
     }
 }
 elseif ($response -eq "B".ToUpper()) {
-    
+    # Dictionary to keep track of changed and created files
     $fileHashDictionary = @{}
+    $changedFiles = @{}
+    $createdFiles = @{}
 
     # Load file|hash from baseline.txt and store them in a dictionary
     $filePathsAndHashes = Get-Content -Path .\baseline.txt
     
     foreach ($f in $filePathsAndHashes) {
-         $fileHashDictionary.add($f.Split("|")[0],$f.Split("|")[1])
+         $fileHashDictionary.add($f.Split("|")[0], $f.Split("|")[1])
     }
 
     # Begin (continuously) monitoring files with saved Baseline
-    $passwordFile = "C:\Users\Mohammad\PowerShell-Integrity Project\password.txt"
-    $securePassword = Get-Content -Path $passwordFile | ConvertTo-SecureString
-
-    $changedFiles = @{}
-    $createdFiles = @{}
-
     while ($true) {
         Start-Sleep -Seconds 1
         
