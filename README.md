@@ -92,75 +92,23 @@ The script monitors a specified folder for changes in files. It can:
 <b>Content of the original files:</b> <br />
 <img src="https://i.imgur.com/svvjLxw.png"80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br /> 
-<b>Changing the content and pop up the "First.txt has changed" alert message:</b> <br />
+<b>Changing the content and pop up the "First.txt has changed!!!" alert message:</b> <br />
 <img src="https://i.imgur.com/BCFWFo7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br /> 
 <b>Receiving the alert email:</b> <br />
 <img src="https://i.imgur.com/wn7wFZF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br />
-<b>Install Active Directory Domain Services on Server:</b> <br />
-<img src="https://i.imgur.com/Nr6S8Dx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Adding a new file and pop up "Forth.txt has been created!:</b> <br />
+<img src="https://i.imgur.com/z9zG5ae.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br />
-<b>Creat a domain name:</b> <br />
-<img src="https://i.imgur.com/j7lQcqb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Receiving the alert email:</b> <br />
+<img src="https://i.imgur.com/l9hBaBj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br />
-<b>Creat Admin Organization Unit:</b> <br />
-<img src="https://i.imgur.com/4TFp8RS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Deleting an original file and pop up the "Third.txt has been deleted!:</b> <br />
+<img src="https://i.imgur.com/dvExEqb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br />
-<b>Creat Admin User:</b> <br />
-<img src="https://i.imgur.com/s7M1T5l.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/rBPHtrY.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /><br /><br />
-<b>Setup Remote Access Server (RAS):</b> <br />
-Allow Client1 on Windows 10 to access to the internet throughout the Domain Controller (DC)
-<img src="https://i.imgur.com/NLCb2IK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/VWLf3IN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/lFy3Z2f.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/r5c6MSm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/aMvmNWl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /><br /><br />
-<b>Setup DHCP Server on Domain Controller:</b> <br />
-Allow Client1 on Windows 10 to to get IP address that get them allow to browse the internet
-<img src="https://i.imgur.com/7Ch2ik2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /> 
-<img src="https://i.imgur.com/D0LfRvA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/TtLou4W.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/uWqG8O0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/2CgXxYR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/YrDfOQU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /><br /><br />
-<b>Create sample users by PowerShell:</b> <br />
-<img src="https://i.imgur.com/v9e1Orw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /> 
-<img src="https://i.imgur.com/FuUvwfS.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /> 
-<img src="https://i.imgur.com/vGk1Vvu.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /> 
-<img src="https://i.imgur.com/DdepuLs.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /><br /><br />
-<b>Create New VM as a Client1 and install Windows 10 ISO:</b> <br />
-<img src="https://i.imgur.com/G4w0cm8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/KxEQjSt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/InDi0Vp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />  
-<img src="https://i.imgur.com/ElQ8ABN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /><br /><br /> 
-<b>Change the computer name and login with one of the users:</b> <br />
-<img src="https://i.imgur.com/4CWkkpy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<img src="https://i.imgur.com/lnnjo5X.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />  
+<b>Receiving the alert email:</b> <br />
+<img src="https://i.imgur.com/hpd8OSK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <!--
  ```diff
