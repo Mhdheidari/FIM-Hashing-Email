@@ -81,22 +81,22 @@ The script monitors a specified folder for changes in files. It can:
 
 <p align="center">
 <b>Unrestricted policy and set the file path:</b>  <br />
-<img src="https://i.imgur.com/V9oAt4F.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/toODk1m.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br />  
-<b>Install Oracle VirtualBox:</b> <br />
-<img src="https://i.imgur.com/Jrrj3lR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Collect new Baseline:</b> <br />
+<img src="https://i.imgur.com/k9L4EHz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br /> 
-<b>Install Windows Server 2019 ISO on VM:</b> <br />
-<img src="https://i.imgur.com/NTMjlL2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Hashing the password:</b> <br />
+<img src="https://i.imgur.com/QbKTMjp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br /> 
-<b>Install Windows 10 ISO on VM:</b> <br />
-<img src="https://i.imgur.com/DLG2F9L.png"80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Content of the original files:</b> <br />
+<img src="https://i.imgur.com/svvjLxw.png"80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br /> 
-<b>Rename the Network Connections:</b> <br />
-<img src="https://i.imgur.com/ypDq1sx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Changing the content and pop up the "First.txt has changed" alert message:</b> <br />
+<img src="https://i.imgur.com/BCFWFo7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br /> 
-<b>Set (TCP/IP) properties for Internal Connection:</b> <br />
-<img src="https://i.imgur.com/ZJ9szlY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Receiving the alert email:</b> <br />
+<img src="https://i.imgur.com/wn7wFZF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br />
 <b>Install Active Directory Domain Services on Server:</b> <br />
 <img src="https://i.imgur.com/Nr6S8Dx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
