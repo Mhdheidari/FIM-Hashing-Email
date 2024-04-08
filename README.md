@@ -74,18 +74,14 @@ The script monitors a specified folder for changes in files. It can:
 - Adjust the monitored folder path (`.\FIM`) as needed for your environment.
 - This script provides a file integrity monitoring mechanism with email alerts for system administrators or users concerned about file changes within a specific folder.
 - It uses a secure password stored in `password.txt` for sending emails, enhancing script security.
-
-
-
-<br /><br /><br /><br /><br /><br />
-
-- <b>Server 2019</b>
+  
+<br /><br />
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-<b>Project Scenario:</b>  <br />
-<img src="https://i.imgur.com/qVqBZJo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Unrestricted policy and set the file path:</b>  <br />
+<img src="https://i.imgur.com/V9oAt4F.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /><br /><br />  
 <b>Install Oracle VirtualBox:</b> <br />
 <img src="https://i.imgur.com/Jrrj3lR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
